@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>合并单元格</title>
+</head>
+<body>
+    <!--跨行合并、跨列合并-->
+    <!--跨行：选取上侧单元格；跨列；跨列：选取左侧单元格-->
+    <!--1,确定跨行还是跨列
+        2，找到目标单元格，确定合并方式
+        3，删除多余的单元格
+    -->
+    <table height="100" width="500" cellspacing="0" border="1">
+            <td> </td>
+            <td colspan="2"></td>
+            <!--<td> </td> 删除这个多余的-->
+        </tr>
+        <tr>
+            <td rowspan="2"> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+           <!--<td> </td>删除这个多余的-->
+            <td> </td>
+            <td> </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表格标签</title>
+</head>
+<body>
+
+    <table>
+        <tr><td>姓名</td> <td>性别</td> <td>年龄</td></tr>
+        <tr><td>umbrella</td> <td>男</td> <td>22</td></tr>
+        <tr><td>jxl</td> <td>男</td> <td>22</td></tr>
+    </table>
+    <!--自动对齐，并且不受空格（&nbsp）的影响，同时自动显示在页面的最左边-->
+
+    <h4>表头单元格标签</h4>
+    <table>
+        <tr> <th>姓名</th> <th>年龄</th> <th>年龄</th></tr>
+        <tr><td>umbrella</td> <td>男</td> <td>22</td></tr>
+        <tr><td>jxl</td> <td>男</td> <td>22</td></tr>
+    </table>
+    <!--th加粗且居中-->
+
+    <h4 align="center">表格属性</h4>    <!--align也可以实现其他的位置，但是后面应该都是通过CSS来表示的-->
+    <table align="center">  <!--right、left、center-->
+        <tr><td>姓名</td> <td>性别</td> <td>年龄</td></tr>
+        <tr><td>umbrella</td> <td>男</td> <td>22</td></tr>
+        <tr><td>jxl</td> <td>男</td> <td>22</td></tr>
+    </table>
+
+    <table border="1" cellpadding="10" cellspacing="10" width="70">    <!--分别是单元格和文字之间的距离以及单元格和单元格之间的距离-->
+        <tr><td>姓名</td> <td>性别</td> <td>年龄</td></tr>
+        <tr><td>umbrella</td> <td>男</td> <td>22</td></tr>
+        <tr><td>jxl</td> <td>男</td> <td>22</td></tr>
+    </table>
+
+</body>
+</html>
