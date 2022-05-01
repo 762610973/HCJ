@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单标签</title>
+</head>
+<body>
+    <form action="" method="get" name="" enctype="multipart/form-data">
+        <!--action返回给某个文件、name：当前表单名字-->
+        用户名：<input type="text" name="userName" value="请输入用户名" maxlength="2"> <br>
+        密 码：<input type="password" name="password" value="请输入密码"> <br>
+        性别：男 <input type="radio" name="1" value="男" checked="checked"> 女 <input type="radio" name="1" value="女"> <br>
+        <!--checked 是默认的属性-->
+        <!--这里实现单选，name的内容必须相同-->
+        爱好： 吃饭 <input type="checkbox" name="hobby" value="吃饭"> 睡觉 <input type="checkbox" name="hobby" value="睡觉"> LOL <input type="checkbox" name="hobby" value="LOL">
+        <br>
+        <!--多选的效果-->
+
+        <input type="submit" value="提交">
+        &nbsp;
+        <input type="reset" value="重置"> <br>
+        
+        <input type="button" value="按钮"> <br>   <!--配合js使用-->
+
+        <input type="file" value="上传文件">
+
+    </form>
+
+
+</body>
+</html>
