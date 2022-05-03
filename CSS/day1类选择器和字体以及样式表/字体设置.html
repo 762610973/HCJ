@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字体设置</title>
+    <style>
+        h2 {
+            font-family: 'Microsoft YaHei UI', "JetBrains Mono";
+            /*设置多个字体的意思是如果电脑没有第一种字体，就会采用第二种字体*/
+            font-size: 60px;
+            font-weight: 400;
+        /*字体粗细normal,number,bold...*/
+        /*font-weight: normal;*/
+        /*400==normal*/
+        }
+        h3 {
+            font-style: italic;
+            /*斜体*/
+
+        }
+        em {
+            font-style: normal;
+        }
+        /*标题标签的大小有自己的计算规则，需要单独设置*/
+        p {
+
+            font-family: "JetBrains Mono";
+            font-weight: 700;
+            /*color: red;*/
+        }
+        body {
+            /*这里可以设置全局的属性*/
+            font-family: 'Microsoft YaHei UI', j;
+            color: green;
+            font-size: 10px;
+        }
+        div {
+            /*样式、粗细、大小、字体 必须一一对应，不能更换位置*/
+            /*大小和字体不能省略，其他可有省略*/
+            font:italic 700 19px "JetBrains Mono";
+        }
+    </style>
+
+</head>
+<body>
+    <h2>样式表</h2>
+    <h3>文字样式</h3>
+    <em>倾斜</em>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+<div>
+    三生三世十里桃花
+</div>
+
+</body>
+</html>
