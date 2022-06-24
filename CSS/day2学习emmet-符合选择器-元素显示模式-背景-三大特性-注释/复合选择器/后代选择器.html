@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>后代选择器/包含选择器</title>
+
+	<style>
+		ol li {
+			color: pink;
+		}
+		ul li {
+			font-size: 60px;
+		}
+		ol li a {
+			color: red;
+		}
+		.nav li {
+			color: #12e012;
+		}
+	</style>
+
+</head>
+<body>
+	<ol>
+		<li>ol-1</li>
+		<li>ol-2</li>
+		<li>ol-3</li>
+		<li><a href="#">子元素的子元素</a></li>
+	</ol>
+	<ul>
+		<li>ul-1</li>
+		<li>ul-2</li>
+		<li>ul-3</li>
+	</ul>
+	<!--和上面进行区分，可以在外部标签加类名-->
+	<ul class="nav">
+		<li>ul-1</li>
+		<li>ul-2</li>
+		<li>ul-3</li>
+	</ul>
+</body>
+</html>

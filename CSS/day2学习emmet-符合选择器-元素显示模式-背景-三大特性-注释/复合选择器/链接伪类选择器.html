@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>伪类选择器</title>
+	<!--伪类选择器用于向某些选择器添加特殊的效果，比如给链接添加特殊效果，或者选择第1个，第n个元素-->
+	<!--实际开发：先写a{},在写a:-->
+	<style>
+		<!--
+        #未访问的连接-- >
+		a:link {
+			color: black;
+			text-decoration: none;
+		}
+		/*访问过的*/
+		a:visited {
+			color: #12e012;
+		}
+		/*选择鼠标经过的链接*/
+		div a:hover {
+			color:deeppink;
+		}
+		/*鼠标按下还没有弹起的链接*/
+		a:active {
+			color: red;
+		}
+		.test:link {
+			color: black;
+			text-decoration: none;
+		}
+		div .test:hover {
+			color: red;
+		}
+		.test:visited {
+			color: red;
+		}
+		.test:active {
+			color: green;
+			font-size: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<a href="https://qq.com">tengxun</a>
+		<a href="https://t.cn" class="test">t.cn</a>
+		<a href="#">umbrella</a>
+	</div>
+</body>
+</html>

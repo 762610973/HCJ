@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>并集选择器</title>
+	<!--并集选择器可以选择多组标签，同时为他们定义相同的样式，通常用于集体声明-->
+	<!--要求1：把熊大和熊二改为粉色-->
+
+	<!--要求2：把熊大和熊二改为红色，小猪一家改为绿色-->
+	<style>
+		/*div,p {*/
+		/*	color: pink;*/
+		/*}*/
+		div,
+		p,
+		.pig li {
+			color: red;
+		}
+	/*约定规范，并集选择器竖着写*/
+	</style>
+</head>
+<body>
+<div>熊大</div>
+<p>熊二</p>
+<ul class="pig">
+	<li>小猪佩奇</li>
+	<li>猪爸爸</li>
+	<li>猪妈妈</li>
+</ul>
+</body>
+</html>

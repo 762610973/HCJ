@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>显示模式的转换</title>
+	<style>
+		a {
+            width: 200px;
+            height: 200px;
+			background-color: #12e012;
+			display: block;
+			/*转换为块级元素 */
+		}
+		div	{
+            width: 2000px;
+            height: 200px;
+			display: inline;
+			/*转换为行内元素*/
+		}
+		/*行内块元素：inline-block*/
+	span {
+        width: 200px;
+		height: 50px;
+		background-color: deeppink;
+        display: inline-block;
+	}
+	</style>
+</head>
+<body>
+	<div>块级元素</div>
+	<div>块级元素</div>
+	<a href="#">显示模式的转换</a>
+	<span>行内块元素</span>
+	<span>行内块元素</span>
+</body>
+</html>
