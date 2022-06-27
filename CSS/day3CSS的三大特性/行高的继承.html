@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>行高的继承</title>
+	<style>
+		body {
+			color: green;
+            font: 12px/1.5 'Microsoft YaHei UI'
+			/*让子元素的行高是文字的1.5*/
+		}
+		div {
+			/*这个1.5就是当前元素文字大小font-size的1.5倍*/
+			font-size: 20px;
+		}
+		p {
+            font-size: 20px;
+			/*子元素没有设置行高，那么继承父元素的1.5倍*/
+		}
+	</style>
+</head>
+<body>
+	<div>div</div>
+	<p>p</p>
+	<span>span</span>
+</body>
+</html>
