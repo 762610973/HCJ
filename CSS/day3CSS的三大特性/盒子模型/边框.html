@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>盒子模型之边框</title>
+	<style>
+		div {
+            width: 300px;
+            height: 200px;
+			border-color: #12e012;
+			/*border-style: dashed;*/
+			border-width: 8px;
+			/*border-style: dotted;*/
+			/*border-style: solid;*/
+			border-top-style: solid;
+			border-bottom-style: dotted;
+			border-left-style: dotted;
+			border-right-style: dotted;
+		}
+		.复合写法 {
+			/*width: 10px;
+			height: 20px;*/
+			border: 1px solid red;
+			/*此时会继承上面的div的宽和高的属性*/
+		}
+		.test {
+			border-width: 2px;
+			/*颜色也继承*/
+		}
+		div span {
+			color: deeppink;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div class="复合写法"></div>
+	<div class="test"></div>
+	<div>
+		<span>Hello</span>
+	</div>
+</body>
+</html>
