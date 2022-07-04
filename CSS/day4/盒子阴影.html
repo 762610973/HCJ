@@ -5,23 +5,21 @@
 	<meta name="viewport"
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>优先级</title>
+	<title>盒子阴影</title>
 	<style>
 		div {
-			color: #12e012 !important;
-		}
-		.test {
-			color: red;
-		}
-		#demo {
-			color: orange;
-		}
+            width: 200px;
+            height: 200px;
+            background-color: green;
+			margin: 100px auto;
 
-
-
+		}
+		div:hover {
+            box-shadow: 10px 10px 10px 10px black;
+		}
 	</style>
 </head>
 <body>
-	<div class="test" id="demo" style="color: blue">优先级</div>
+	<div></div>
 </body>
 </html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>浮动元素一行显示</title>
+	<style>
+		div {
+			float: left;
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+		}
+		.a {
+            background-color: purple;
+		}
+		.b {
+			margin-top: 500px;/*加了margin之后也会占住位置*/
+			margin-left: 100px;
+            height: 250px;
+            background-color: green;
+		}
+		.c {
+            background-color: black;
+		}
+
+	</style>
+</head>
+<body>
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+</body>
+</html>
